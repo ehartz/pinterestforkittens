@@ -1,5 +1,7 @@
 Pinterestforkittens::Application.routes.draw do
-  get "page/index"
+  resources :pins
+
+  # get "page/index"
 
   get "/about" => "page#about"
 
